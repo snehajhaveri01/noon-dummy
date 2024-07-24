@@ -61,7 +61,7 @@
   
     chatWidget.innerHTML = `
      <div id="chat-header" style="background-color: black; color: #fff; padding: 10px; text-align: center; font-size: 1.5em;">
-      Noon Tailor Support
+      Noon Seller Support
     </div>
       <div id="chat-messages" style="height: 70%; overflow-y: auto; padding: 10px;"></div>
       <div style="padding: 10px; display: flex; align-items: center; background-color: #00000;">
