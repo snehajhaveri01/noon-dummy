@@ -5,8 +5,8 @@
     chatIcon.style.position = 'fixed';
     chatIcon.style.bottom = '20px';
     chatIcon.style.right = '20px';
-    chatIcon.style.width = '10vw'; // Responsive width
-    chatIcon.style.height = '10vw'; // Responsive height
+    chatIcon.style.width = '20vw'; // Responsive width
+    chatIcon.style.height = '20vw'; // Responsive height
     chatIcon.style.maxWidth = '60px'; // Max width for larger screens
     chatIcon.style.maxHeight = '60px'; // Max height for larger screens
     chatIcon.style.backgroundColor = "black";
@@ -46,8 +46,8 @@
     chatWidget.style.right = '5vw'; // Responsive right position
     chatWidget.style.width = '80vw'; // Responsive width
     chatWidget.style.maxWidth = '400px'; // Max width for larger screens
-    chatWidget.style.height = '400vh'; // Responsive height
-    chatWidget.style.maxHeight = '400px'; // Max height for larger screens
+    chatWidget.style.height = '500vh'; // Responsive height
+    chatWidget.style.maxHeight = '500px'; // Max height for larger screens
     chatWidget.style.border = '1px solid #2d3748';
     chatWidget.style.borderRadius = '10px';
     chatWidget.style.overflow = 'hidden';
