@@ -1,0 +1,182 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #404553;
+}
+
+header {
+    background-color: #F3E008;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px; /* Adjust the width as needed */
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.logo-text {
+    font-size: 24px; 
+    font-weight: bold;
+    color: black;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.right-text{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2;
+}
+
+.language-selector {
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8; 
+    padding: 15px 100px;
+}
+
+.breadcrumb {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar {
+    width: 500px;  /* Adjusted width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-bar:hover {
+    box-shadow: 1px 5px 15px rgba(0,0,0,0.1);
+}
+
+
+main {
+    padding: 30px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 1px 5px 15px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    background-color: #F8F8F8;
+    border-bottom: solid #F3E008;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card h3, .card a h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #6f7284;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.articles-section {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.articles-header {
+    background-color: #F3E008;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.articles-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.articles-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.articles-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.articles-list li:last-child {
+    border-bottom: none;
+}
+
+.articles-list a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.articles-list a:hover {
+    color: red;
+}
