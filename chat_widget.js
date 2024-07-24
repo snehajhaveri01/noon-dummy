@@ -47,7 +47,7 @@
     chatWidget.style.right = '5vw'; // Responsive right position
     chatWidget.style.width = '80vw'; // Responsive width
     chatWidget.style.maxWidth = '400px'; // Max width for larger screens
-    chatWidget.style.height = '60vh'; // Responsive height
+    chatWidget.style.height = '400vh'; // Responsive height
     chatWidget.style.maxHeight = '400px'; // Max height for larger screens
     chatWidget.style.border = '1px solid #2d3748';
     chatWidget.style.borderRadius = '10px';
@@ -60,14 +60,19 @@
     chatWidget.style.fontSize = '14px'; // Responsive font size
   
     chatWidget.innerHTML = `
+     <div id="chat-header" style="background-color: black; color: #fff; padding: 10px; text-align: center; font-size: 1.5em;">
+      Noon Tailor Support
+    </div>
       <div id="chat-messages" style="height: 70%; overflow-y: auto; padding: 10px;"></div>
       <div style="padding: 10px; display: flex; align-items: center; background-color: #00000;">
-        <input type="text" id="chat-input" style="flex: 1; padding: 10px; border: none; border-radius: 20px; background-color: #000000; color: #fff; outline: none; font-size: 0.8em;" placeholder="Let the magic begin, Ask a question." />
+        <input type="text" id="chat-input" style="flex: 1; padding: 15px; border: none; border-radius: 20px; background-color: #000000; color: #fff; outline: none; font-size: 0.8em;" placeholder="Let the magic begin, Ask a question." />
         <button id="chat-send" style="margin-left: 10px; background-color: #444444; color: #ffffff; border: none; border-radius: 50%; width: 10vw; height: 10vw; max-width: 40px; max-height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-size: 1em;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="30" height="30">
             <path d="M2 21l21-9L2 3v7l15 2-15 2z"></path>
           </svg>
         </button>
+        <br><br/>
+        
       </div>
     `;
   
@@ -240,3 +245,5 @@
     document.head.appendChild(style);
   })();
   
+
+
