@@ -31,10 +31,9 @@
     });
   
     chatIcon.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="30" height="30">
-        <path d="M12 0C5.372 0 0 4.372 0 9.75 0 12.792 1.579 15.554 4.051 17.331 3.728 18.5 3.072 19.792 2 21.096 2.192 21.145 3.835 20.832 5.083 19.25 6.72 19.734 8.485 20 10.313 20 16.627 20 22 15.628 22 10.25S16.627 0 12 0z"></path>
-      </svg>
+  <img src="assets/logo.png" alt="Chat Logo" style="width: 60%; height: 60%; max-width: 40px; max-height: 40px; border-radius: 50%; object-fit: cover;">
     `;
+
   
     document.body.appendChild(chatIcon);
   
@@ -52,21 +51,21 @@
     chatWidget.style.border = '1px solid #2d3748';
     chatWidget.style.borderRadius = '10px';
     chatWidget.style.overflow = 'hidden';
-    chatWidget.style.fontFamily = 'Arial, sans-serif';
-    chatWidget.style.backgroundColor = '#0B031E';
+    chatWidget.style.fontFamily = 'sans-serif';
+    chatWidget.style.backgroundColor = 'black';
     chatWidget.style.color = '#fff';
     chatWidget.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.1)';
     chatWidget.style.zIndex = '1000';
     chatWidget.style.fontSize = '14px'; // Responsive font size
   
     chatWidget.innerHTML = `
-     <div id="chat-header" style="background-color: black; color: #fff; padding: 10px; text-align: center; font-size: 1.5em;">
+     <div id="chat-header" style="background-color: #F3E008; color: black; padding: 10px; text-align: center; font-size: 1.5em;">
       Noon Seller Support
     </div>
       <div id="chat-messages" style="height: 70%; overflow-y: auto; padding: 10px;"></div>
       <div style="padding: 10px; display: flex; align-items: center; background-color: #00000;">
-        <input type="text" id="chat-input" style="flex: 1; padding: 15px; border: none; border-radius: 20px; background-color: #000000; color: #fff; outline: none; font-size: 0.8em;" placeholder="Let the magic begin, Ask a question." />
-        <button id="chat-send" style="margin-left: 10px; background-color: #444444; color: #ffffff; border: none; border-radius: 50%; width: 10vw; height: 10vw; max-width: 40px; max-height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-size: 1em;">
+        <input type="text" id="chat-input" style="flex: 1; padding: 15px; border: none; border-radius: 20px; background-color: #0B031E; color: #fff; outline: none; font-size: 0.8em;" placeholder="Let the magic begin, Ask a question." />
+        <button id="chat-send" style="margin-left: 10px; background-color: #0B031E; color: #ffffff; border: none; border-radius: 50%; width: 10vw; height: 10vw; max-width: 40px; max-height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; font-size: 1em;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="30" height="30">
             <path d="M2 21l21-9L2 3v7l15 2-15 2z"></path>
           </svg>
@@ -125,7 +124,7 @@
       messageSpan.appendChild(textSpan);
       messageSpan.appendChild(timeSpan);
   
-      avatar.src = isUser ? "https://cdn1.vectorstock.com/i/1000x1000/91/60/user-profile-3d-icon-avatar-or-person-button-vector-46429160.jpg" : 'https://img.freepik.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1718236800&semt=ais_user';
+      avatar.src = isUser ? "https://cdn1.vectorstock.com/i/1000x1000/91/60/user-profile-3d-icon-avatar-or-person-button-vector-46429160.jpg" : 'assets/logo.png';
   
       if (isUser) {
         messageDiv.appendChild(messageSpan);
@@ -146,7 +145,8 @@
       typingDiv.style.margin = '10px 0';
   
       const avatar = document.createElement('img');
-      avatar.src = 'https://penguinui.s3.amazonaws.com/component-assets/bot-icon.png'; 
+      // avatar.src = 'https://penguinui.s3.amazonaws.com/component-assets/bot-icon.png'; 
+      avatar.src = 'assets/logo.png'; 
       avatar.style.height = '32px';
       avatar.style.width = '4vw'; // Responsive avatar size
       avatar.style.maxWidth = '32px'; // Max width for larger screens
