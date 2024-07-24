@@ -192,7 +192,7 @@
       const typingIndicator = appendTypingIndicator();
   
       try {
-        const response = await fetch('http://13.71.119.166:8000/user/sessionChat', {
+        const response = await fetch('https://api.botwot.io/user/proxy/sessionChat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
