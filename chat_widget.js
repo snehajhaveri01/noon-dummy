@@ -198,11 +198,11 @@
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            "userId": "6693fc7f10f2a1cd47863bce",
+            "userId": "669bea6783f712df352b1331",
             "sessionId": localStorage.getItem('sessionId') || "",
             "question": message,
             "subscriptionPlanId": "subscriptionPlanId1",
-            "botId": "66a15ce4ae91c5d6e81f9b6f"
+            "botId": "66a15ce4ae91c5d6e81f9b61"
           })
         });
   
