@@ -192,17 +192,17 @@
       const typingIndicator = appendTypingIndicator();
   
       try {
-        const response = await fetch('https://api.botwot.io/user/sessionChat', {
+        const response = await fetch('http://13.71.119.166:8000/user/sessionChat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            "userId": "66733225795ffe5955f46ed0",
+            "userId": "6693fc7f10f2a1cd47863bce",
             "sessionId": localStorage.getItem('sessionId') || "",
             "question": message,
             "subscriptionPlanId": "subscriptionPlanId1",
-            "botId": "66733a29795ffe5955f46ee6"
+            "botId": "66a15ce4ae91c5d6e81f9b6f"
           })
         });
   
